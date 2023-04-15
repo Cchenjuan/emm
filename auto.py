@@ -8,8 +8,6 @@
 
 import os
 import schedule
-import time
-import os
 
 # 切换到本地仓库目录
 os.chdir("/Users/chenjuan/Documents/person/learn/python/emm")
@@ -18,7 +16,7 @@ os.chdir("/Users/chenjuan/Documents/person/learn/python/emm")
 # 定义一个函数，用于向 a.txt 中追加一行 "helloworld"，并提交代码到 Github 仓库
 def append_line():
     with open("a.txt", "a") as f:
-        f.write("hello world\n")
+        f.write(f"hello world \n")
     # 添加所有文件到 Git
     os.system("git add .")
     # 提交代码
