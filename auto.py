@@ -10,13 +10,6 @@ import os
 import schedule
 import time
 import os
-# 设置 Git 的用户名和密码
-username = "1945402427@qq.com"
-password = "way1243211@"
-# 设置 Git 的认证信息
-os.system(f"git config --global credential.helper 'store --file=.git/credentials'")
-os.system(f"git config --global user.name '{username}'")
-os.system(f"git config --global user.password '{password}'")
 
 # 切换到本地仓库目录
 os.chdir("/Users/chenjuan/Documents/person/learn/python/emm")
@@ -30,6 +23,8 @@ def append_line():
     os.system("git add .")
     # 提交代码
     os.system("git commit -m 'automatic commit' --author='chenjun <cchenjuan@163com>'")
+    os.system(
+        "git remote set-url --push origin https://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@github.com/Cchenjuan/emm.git ")
     # 推送到远程仓库
     os.system("git push")
 
@@ -43,4 +38,3 @@ if __name__ == "__main__":
     #     # 每隔 1 分钟检查一次是否需要执行定时任务
     #     schedule.run_pending()
     #     time.sleep(60)
-
