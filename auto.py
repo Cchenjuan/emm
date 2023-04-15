@@ -9,6 +9,14 @@
 import os
 import schedule
 import time
+import os
+# 设置 Git 的用户名和密码
+username = "1945402427@qq.com"
+password = "way1243211@"
+# 设置 Git 的认证信息
+os.system(f"git config --global credential.helper 'store --file=.git/credentials'")
+os.system(f"git config --global user.name '{username}'")
+os.system(f"git config --global user.password '{password}'")
 
 # 切换到本地仓库目录
 os.chdir("/Users/chenjuan/Documents/person/learn/python/emm")
