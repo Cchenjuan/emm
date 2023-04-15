@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+ @Author   : chenjun
+ @Time     : 2023/4/15 23:39
+ @Description: 
+"""
+
 import os
 import schedule
 import time
@@ -9,7 +17,7 @@ os.chdir("/Users/chenjuan/Documents/person/learn/python/emm")
 # 定义一个函数，用于向 a.txt 中追加一行 "helloworld"，并提交代码到 Github 仓库
 def append_line():
     with open("a.txt", "a") as f:
-        f.write("hello world\n")
+        f.write("helloworld\n")
     # 添加所有文件到 Git
     os.system("git add .")
     # 提交代码
@@ -27,3 +35,4 @@ if __name__ == "__main__":
     #     # 每隔 1 分钟检查一次是否需要执行定时任务
     #     schedule.run_pending()
     #     time.sleep(60)
+
