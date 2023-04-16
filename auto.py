@@ -22,7 +22,7 @@ def append_line():
     # 提交代码
     os.system("git commit -m 'automatic commit' --author='chenjun <cchenjuan@163com>'")
     os.system(
-        "git remote set-url --push origin https://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@github.com/Cchenjuan/emm.git ")
+        "git remote set-url --push origin https://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@github.com/Cchenjuan/emm.git ")
     # 推送到远程仓库
     os.system("git push")
 
